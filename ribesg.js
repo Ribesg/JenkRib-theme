@@ -10,7 +10,7 @@ var replacements = {
 var main = function() {
    var regex = /\/static\/.+?\/(.+)/;
 
-   _('img').forEach(function(img) {
+   _('img').each(function(i, img) {
 
       var src = _(img).attr('src');
       console.log("Found img: " + src);
