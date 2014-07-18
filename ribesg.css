@@ -45,6 +45,12 @@ a:hover {
  ************/
 /* Icons are from http://www.flaticon.com/ */
 
+.task a {
+   padding-left: 24px;
+   margin-left: 8px;
+   vertical-align: middle !important;
+}
+
 /* Hide actual images */
 .task a[onclick~="doDelete"] img,
 .task a[href$="configure"].task-icon-link img {
