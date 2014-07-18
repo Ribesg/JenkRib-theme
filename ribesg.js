@@ -1,3 +1,5 @@
+var _ = jQuery.noConflict(true);
+
 var path = 'http://ci.ribesg.fr/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/';
 
 var replacements = {
@@ -8,9 +10,9 @@ var replacements = {
 var main = function() {
    var regex = /\/static\/.+?\/(.+)/;
 
-   $('img').forEach(function(img) {
+   _('img').forEach(function(img) {
 
-      var src = $(img).attr('src');
+      var src = _(img).attr('src');
       console.log("Found img: " + src);
 
       var regexExec = regex.exec(src);
@@ -20,7 +22,7 @@ var main = function() {
       var replacement = replacements[subPath];
       console.log("Found replacement: " + replacement);
 
-      $(img).attr(path + replacement);
+      _(img).attr(path + replacement);
    });
 };
 
