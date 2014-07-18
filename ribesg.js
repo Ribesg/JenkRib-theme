@@ -16,13 +16,21 @@ var main = function() {
       console.log("Found img: " + src);
 
       var regexExec = regex.exec(src);
-      var subPath = regexExec[1];
-      console.log("Extracted subPath from src: " + subPath);
+      var foundPath;
+      if (regexExec != null) {
+         foundPath = regexExec[1];
+         console.log("Extracted subPath from src: " + foundPath);
+      } else {
+         foundPath = src;
+      }
 
-      var replacement = replacements[subPath];
-      console.log("Found replacement: " + replacement);
-
-      _(img).attr(path + replacement);
+      var replacement = replacements[foundPath];
+      if (replacement != null) {
+         console.log("Found replacement: " + replacement);
+         _(img).attr(path + replacement);
+      } else {
+         console.log("No replacement found");
+      }
    });
 };
 
