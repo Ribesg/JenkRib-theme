@@ -27,7 +27,7 @@ var main = function() {
       var replacement = replacements[foundPath];
       if (replacement != null) {
          console.log("\tFound replacement: " + replacement);
-         _(img).attr(path + replacement);
+         _(img).attr('src', path + replacement);
       } else {
          console.log("\tNo replacement found");
       }
