@@ -1,21 +1,29 @@
+/* Open Sans font */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 /**
  * Ribesg's Jenkins theme
  */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/***********************
+ ** General overrides **
+ ***********************/
 
 body, table, form, input, td, th, p, textarea, select {
-    /* Apply global font */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+   /* Apply global font */
+   font-family : 'Open Sans', sans-serif;
+   font-size   : 13px;
 
-    /* Background */
-    background-color: #151515;
-    color: #C8C8C8;
+   /* Background */
+   /* FIXME Will re-change that later
+   background-color: #151515;
+   color: #C8C8C8;
 }
 
 .top-sticker-inner {
-    background-color: #002000;
-    color: whitesmoke;
+   background-color: #002000;
+   color: whitesmoke;
+*/
 }
 
 a,
@@ -24,10 +32,32 @@ a:visited,
 #breadcrumbs li a,
 #breadcrumbs li a:link,
 #breadcrumbs li a:visited {
-    text-decoration: none;
-    color: green;
+   text-decoration : none;
+   color           : green;
 }
 
 a:hover {
-    color: lightgreen;
+   color : lightgreen;
+}
+
+/************
+ ** Images **
+ ************/
+
+/* Hide actual images */
+a[onclick~="doDelete"].task-icon-link img,
+a[href$="configure"].task-icon-link img {
+   display: none;
+}
+
+/* Job Delete icon */
+a[onclick~="doDelete"].task-icon-link {
+   background      : url(job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
+   background-size : contain;
+}
+
+/* Job Config Icon */
+a[href$="configure"].task-icon-link {
+   background      : url(job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
+   background-size : contain;
 }
