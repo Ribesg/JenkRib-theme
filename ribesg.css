@@ -7,6 +7,6 @@
 
 body, table, form, input, td, th, p, textarea, select {
     /* Apply global font */
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
