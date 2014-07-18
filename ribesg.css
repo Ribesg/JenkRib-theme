@@ -1,0 +1,11 @@
+/**
+ * Ribesg's Jenkins theme
+ */
+
+/* Global font: Open Sans */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+    /* Apply global font */
+    font-family: 'Open Sans', sans-serif !important;
+}
