@@ -43,21 +43,22 @@ a:hover {
 /************
  ** Images **
  ************/
+/* Icons are from http://www.flaticon.com/ */
 
 /* Hide actual images */
-a[onclick~="doDelete"].task-icon-link img,
-a[href$="configure"].task-icon-link img {
-   display: none;
+.task a[onclick~="doDelete"] img,
+.task a[href$="configure"].task-icon-link img {
+   display : none;
 }
 
 /* Job Delete icon */
-a[onclick~="doDelete"].task-icon-link {
+.task a[onclick~="doDelete"] {
    background      : url(job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Config Icon */
-a[href$="configure"].task-icon-link {
+.task a[href$="configure"].task-icon-link {
    background      : url(job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
    background-size : contain;
 }
