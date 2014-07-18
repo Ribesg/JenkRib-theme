@@ -45,7 +45,7 @@ a:hover {
  ************/
 /* Icons are from http://www.flaticon.com/ */
 
-.task a {
+.task a:not(.task-link) {
    padding-left: 24px;
    margin-left: 8px;
    vertical-align: middle !important;
