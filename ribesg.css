@@ -10,3 +10,12 @@ body, table, form, input, td, th, p, textarea, select {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+    color: lightgreen;
+}
