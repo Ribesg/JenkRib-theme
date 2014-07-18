@@ -3,14 +3,18 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-body, table, form, input, td, th, p, textarea, select, .top-sticker-inner {
+body, table, form, input, td, th, p, textarea, select {
     /* Apply global font */
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 
     /* Background */
-    background: #151515;
+    background-color: #151515;
     color: #C8C8C8;
+}
+
+.top-sticker-inner {
+    background-color: #002000;
 }
 
 a,
