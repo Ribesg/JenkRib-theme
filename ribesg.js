@@ -1,3 +1,7 @@
+/**
+ * This is for testing purpose, at the end images should be replaced in Jenkins' WAR file.
+ */
+
 var _ = jQuery.noConflict(true);
 
 var path = 'http://ci.ribesg.fr/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/';
@@ -7,7 +11,7 @@ var replacements = {
    "images/24x24/edit-delete.png": "cancel.png"
 };
 
-var main = function() {
+var replaceImages = function() {
    var regex = /\/static\/.+?\/(.+)/;
 
    _('img').each(function(i, img) {
@@ -33,7 +37,3 @@ var main = function() {
       }
    });
 };
-
-_(document).ready(function() {
-   main();
-});
