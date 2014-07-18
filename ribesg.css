@@ -9,16 +9,16 @@ body, table, form, input, td, th, p, textarea, select {
     /* Apply global font */
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    
+
     /* Background */
     background-size: 150px 150px;
-    background: #101010 linear-gradient(to bottom right, transparent 25%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.1) 75%) fixed;
+    background: #151515 linear-gradient(to bottom right, transparent 25%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.25) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.25) 75%) fixed;
     color: #C8C8C8;
 }
 
 a, a:link, a:visited {
     text-decoration: none;
-    color: darkgreen;
+    color: green;
 }
 
 a:hover {
