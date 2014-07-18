@@ -53,12 +53,12 @@ a:hover {
 
 /* Job Delete icon */
 .task a[onclick~="doDelete"] {
-   background      : url(job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Config Icon */
 .task a[href$="configure"].task-icon-link {
-   background      : url(job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
    background-size : contain;
 }
