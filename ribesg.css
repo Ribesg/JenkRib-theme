@@ -11,7 +11,7 @@ body, table, form, input, td, th, p, textarea, select {
     font-size: 13px;
 }
 
-a {
+a, a:link, a:visited {
     text-decoration: none;
     color: darkgreen;
 }
