@@ -26,6 +26,6 @@ var main = function() {
    });
 };
 
-$(document).ready(function() {
+_(document).ready(function() {
    main();
 });
