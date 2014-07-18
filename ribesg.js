@@ -19,17 +19,17 @@ var main = function() {
       var foundPath;
       if (regexExec != null) {
          foundPath = regexExec[1];
-         console.log("Extracted subPath from src: " + foundPath);
+         console.log("\tExtracted subPath from src: " + foundPath);
       } else {
          foundPath = src;
       }
 
       var replacement = replacements[foundPath];
       if (replacement != null) {
-         console.log("Found replacement: " + replacement);
+         console.log("\tFound replacement: " + replacement);
          _(img).attr(path + replacement);
       } else {
-         console.log("No replacement found");
+         console.log("\tNo replacement found");
       }
    });
 };
