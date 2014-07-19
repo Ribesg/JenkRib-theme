@@ -45,17 +45,23 @@ a:hover {
  ************/
 /* Icons are from http://www.flaticon.com/ */
 
+/***************
+ ** Task list **
+ ***************/
+
+/* Set task list line height */
 .task {
    height : 24px;
 }
 
+/* Make some place for the new icons */
 .task a:not(.task-link) {
    padding-left   : 24px;
    margin-left    : 8px;
    vertical-align : middle !important;
 }
 
-/* Hide actual images */
+/* Hide old icons */
 .task a[href="/"].task-icon-link img,
 .task a[href^="/job/"].task-icon-link img,
 .task a[href$="/changes"].task-icon-link img,
@@ -86,84 +92,106 @@ a:hover {
 .task a[href$="/badge"].task-icon-link,
 .task a[href$="/nextbuildnumber"].task-icon-link,
 .task a[href$="/GitHubPollLog"].task-icon-link {
-   width           : 24px;
-   height          : 24px;
+   width  : 24px;
+   height : 24px;
 }
 
 /* Back icon */
 .task a[href="/"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/back.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/back.png) no-repeat;
    background-size : contain;
 }
 
 /* Job State icon */
 .task a[href^="/job/"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/status.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/status.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Changes icon */
 .task a[href$="/changes"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Working Repository icon */
 .task a[href$="/ws"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Build icon */
 .task a[href*="/build?"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Delete icon */
 .task a[onclick*="doDelete"]:not(.task-link) {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Config icon */
 .task a[href$="configure"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Github icon */
 .task a[href*="github.com"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/github.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/github.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Dependency Graph icon */
 .task a[href$="/depgraph-view"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/dependency.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/dependency.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Configuration History icon */
 .task a[href$="/jobConfigHistory"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/config-history.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/config-history.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Embeddable Build Status icon */
 .task a[href$="/badge"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build-status.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build-status.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Next Build Number icon */
 .task a[href$="/nextbuildnumber"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/number.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/number.png) no-repeat;
    background-size : contain;
 }
 
 /* Job Github Hook Log icon */
 .task a[href$="/GitHubPollLog"].task-icon-link {
-   background : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/log.png) no-repeat;
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/log.png) no-repeat;
+   background-size : contain;
+}
+
+/************
+ ** Others **
+ ************/
+
+/* Hide old icons */
+#main-panel > table > tbody > tr:first-child > a[href="ws/"] img {
+   display : none;
+}
+
+/* Set link size */
+#main-panel > table > tbody > tr:first-child > a[href="ws/"] {
+   width          : 48px;
+   height         : 48px;
+   vertical-align : middle !important;
+}
+
+/* Main Job Working Repository icon */
+#main-panel > table > tbody > tr:first-child > a[href="ws/"] {
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
    background-size : contain;
 }
