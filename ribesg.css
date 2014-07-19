@@ -65,7 +65,7 @@ img[src$="images/24x24/clock.png"],
 img[src$="images/24x24/edit-delete.png"],
 img[src$="images/24x24/setting.png"],
 img[src$="plugin/github/logov3.png"],
-img[src$="images/24x24/graph.png"],
+img[src$="images/24x24/graph.gif"],
 img[src$="plugin/jobConfigHistory/img/confighistory.png"],
 img[src$="plugin/embeddable-build-status/images/24x24/shield.png"],
 img[src$="images/24x24/next.png"],
@@ -142,7 +142,7 @@ img[src$="plugin/github/logov3.png"] {
 }
 
 /* Job Dependency Graph icon */
-img[src$="images/24x24/graph.png"] {
+img[src$="images/24x24/graph.gif"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/dependency.png);
    background-size : contain;
 }
