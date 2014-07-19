@@ -177,33 +177,11 @@ a:hover {
 /************
  ** Others **
  ************/
-
-/* Fix height */
-#main-panel > table > tbody > tr:first-child,
-#main-panel > table > tbody > tr:first-child > td {
-   height         : 48px !important;
-   vertical-align : middle !important;
-}
-
-/* Hide old icons */
-#main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] img {
-   display : none;
-}
-
-/* Set link size */
-#main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] {
-   display : block;
-   width   : 48px;
-   height  : 48px;
-}
-
-/* Main Job Working Repository icon */
-#main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
-   background-size : contain;
+img[src$="images/48x48/folder.png"] {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png);
 }
 
 /* Test */
 img[src$="images/48x48/package.png"] {
-   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png);
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/package.png);
 }
