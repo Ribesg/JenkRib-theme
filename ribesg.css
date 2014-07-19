@@ -21,8 +21,16 @@ body, table, form, input, td, th, p, textarea, select {
 
 .top-sticker-inner {
    background-color : #008000;
-   color            : #000000;
+   color            : #000000 !important;
 }
+
+#main-table + table {
+   display : none;
+}
+
+/***********
+ ** Links **
+ ***********/
 
 a,
 a:link,
@@ -30,25 +38,42 @@ a:visited,
 #breadcrumbs li a,
 #breadcrumbs li a:link,
 #breadcrumbs li a:visited {
-   text-decoration : none;
-   color           : green;
+   text-decoration : none !important;
    transition      : color .1s;
+}
+
+/* All links */
+a,
+a:link,
+a:visited {
+   color : #00A000;
 }
 
 a:hover {
    color : #00FF00;
 }
 
-.task {
-   transition : background-color .1s;
+/* Breadcrumb */
+#breadcrumbs li a,
+#breadcrumbs li a:link,
+#breadcrumbs li a:visited {
+   color : #151515;
 }
 
-.task:hover {
+#breadcrumbs li a:hover {
+   color : #000000;
+}
+
+/* Task list */
+.task a,
+.task a:link,
+.task a:visited {
+   display    : block;
+   transition : color .1s, background-color .1s;
+}
+
+.task a:hover {
    background-color : #151515;
-}
-
-#main-table + table {
-   display : none;
 }
 
 /************
