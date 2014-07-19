@@ -181,7 +181,8 @@ a:hover {
 /* Fix height */
 #main-panel > table > tbody > tr:first-child,
 #main-panel > table > tbody > tr:first-child > td {
-   height : 48px !important;
+   height         : 48px !important;
+   vertical-align : middle !important;
 }
 
 /* Hide old icons */
@@ -190,8 +191,12 @@ a:hover {
 }
 
 /* Set link size */
+#main-panel > table > tbody > tr:first-child > td > a {
+   line-height : 48px;
+}
+
 #main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] {
-   padding        : 24px;
+   padding-left   : 48px;
    vertical-align : middle !important;
 }
 
