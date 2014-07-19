@@ -45,11 +45,17 @@ a:hover {
  ************/
 /* Icons are from http://www.flaticon.com/ */
 
-/***************
- ** Task list **
- ***************/
-
 /* Set old image size to 0 and set padding to new image size */
+
+img[src$="images/48x48/folder.png"],
+img[src$="images/48x48/package.png"],
+img[src$="images/48x48/notepad.png"] {
+   width          : 0;
+   height         : 0;
+   padding-right  : 48px;
+   padding-bottom : 48px;
+}
+
 .task a[href="/"].task-icon-link img,
 .task a[href^="/job/"].task-icon-link img,
 .task a[href$="/changes"].task-icon-link img,
@@ -68,6 +74,17 @@ a:hover {
    padding-right  : 24px;
    padding-bottom : 24px;
 }
+
+img[src$="images/16x16/notepad.png"] {
+   width          : 0;
+   height         : 0;
+   padding-right  : 16px;
+   padding-bottom : 16px;
+}
+
+/***************
+ ** Task list **
+ ***************/
 
 /* Back icon */
 .task a[href="/"].task-icon-link img {
@@ -150,15 +167,6 @@ a:hover {
 /************
  ** Others **
  ************/
-img[src$="images/48x48/folder.png"],
-img[src$="images/48x48/package.png"],
-img[src$="images/48x48/notepad.png"],
-img[src$="images/16x16/notepad.png"] {
-   width          : 0;
-   height         : 0;
-   padding-right  : 48px;
-   padding-bottom : 48px;
-}
 
 /* Main Workspace Repository icon */
 img[src$="images/48x48/folder.png"] {
