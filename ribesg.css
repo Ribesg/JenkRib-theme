@@ -185,6 +185,7 @@ a:hover {
 
 /* Set link size */
 #main-panel > table > tbody > tr > td:first-child > a[href="ws/"] {
+   padding-left   : 48px;
    width          : 48px;
    height         : 48px;
    vertical-align : middle !important;
