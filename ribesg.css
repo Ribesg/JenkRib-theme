@@ -205,13 +205,5 @@ a:hover {
 
 /* Test */
 img[src$="images/48x48/package.png"] {
-   display : none;
-}
-
-img[src$="images/48x48/package.png"]:before {
-   display         : block;
-   width           : 48px;
-   height          : 48px;
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
-   background-size : contain;
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png);
 }
