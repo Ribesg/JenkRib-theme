@@ -179,19 +179,19 @@ a:hover {
  ************/
 
 /* Hide old icons */
-#main-panel > table > tbody > tr:first-child > a[href="ws/"] img {
+#main-panel > table > tbody > tr > td:first-child > a[href="ws/"] img {
    display : none;
 }
 
 /* Set link size */
-#main-panel > table > tbody > tr:first-child > a[href="ws/"] {
+#main-panel > table > tbody > tr > td:first-child > a[href="ws/"] {
    width          : 48px;
    height         : 48px;
    vertical-align : middle !important;
 }
 
 /* Main Job Working Repository icon */
-#main-panel > table > tbody > tr:first-child > a[href="ws/"] {
+#main-panel > table > tbody > tr > td:first-child > a[href="ws/"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
    background-size : contain;
 }
