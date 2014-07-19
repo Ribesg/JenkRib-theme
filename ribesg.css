@@ -72,6 +72,10 @@ a:hover {
    transition : color .1s, background-color .1s;
 }
 
+.task a:first-child {
+   float : left;
+}
+
 .task a:hover {
    background-color : #151515;
 }
