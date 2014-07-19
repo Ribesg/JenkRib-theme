@@ -179,7 +179,8 @@ a:hover {
  ************/
 
 /* Fix height */
-#main-panel > table > tbody > tr:first-child {
+#main-panel > table > tbody > tr:first-child,
+#main-panel > table > tbody > tr:first-child > td {
    height : 48px !important;
 }
 
@@ -190,9 +191,7 @@ a:hover {
 
 /* Set link size */
 #main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] {
-   padding-left   : 48px;
-   width          : 48px;
-   height         : 48px !important;
+   padding        : 24px;
    vertical-align : middle !important;
 }
 
