@@ -191,12 +191,10 @@ a:hover {
 }
 
 /* Set link size */
-#main-panel > table > tbody > tr:first-child > td > a {
-   line-height : 48px;
-}
-
 #main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] {
    display : block;
+   width   : 48px;
+   height  : 48px;
 }
 
 /* Main Job Working Repository icon */
