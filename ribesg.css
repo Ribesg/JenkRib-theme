@@ -11,19 +11,17 @@
 
 body, table, form, input, td, th, p, textarea, select {
    /* Apply global font */
-   font-family : 'Open Sans', sans-serif;
-   font-size   : 13px;
+   font-family      : 'Open Sans', sans-serif;
+   font-size        : 13px;
 
    /* Background */
-   /* FIXME Will re-change that later
-   background-color: #151515;
-   color: #C8C8C8;
+   background-color : #151515;
+   color            : #C8C8C8;
 }
 
 .top-sticker-inner {
-   background-color: #002000;
-   color: whitesmoke;
-*/
+   background-color : #002000;
+   color            : whitesmoke;
 }
 
 a,
@@ -37,7 +35,7 @@ a:visited,
 }
 
 a:hover {
-   color : lightgreen;
+   color : #00FF00;
 }
 
 /************
