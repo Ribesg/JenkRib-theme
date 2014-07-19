@@ -6,5 +6,5 @@ do
   FILE=$(/usr/bin/basename "$PATH")
   TYPE="${FILE##*.}"
   NAME="${FILE%.*}"
-  yc --type $TYPE -o "$NAME.min.$TYPE" "$FILE"
+  /usr/bin/yc --type $TYPE -o "$NAME.min.$TYPE" "$FILE"
 done
