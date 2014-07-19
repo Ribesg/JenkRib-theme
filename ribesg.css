@@ -65,16 +65,12 @@ a:hover {
 }
 
 /* Task list */
-.task {
-   vertical-align : middle;
-}
-
 .task a,
 .task a:link,
 .task a:visited {
-   display     : block;
-   line-height : 24px;
-   transition  : color .1s, background-color .1s;
+   display    : block;
+   height     : 24px;
+   transition : color .1s, background-color .1s;
 }
 
 .task a:first-child {
