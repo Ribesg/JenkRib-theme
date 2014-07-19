@@ -65,6 +65,10 @@ a:hover {
 }
 
 /* Task list */
+.task {
+   vertical-align : middle;
+}
+
 .task a,
 .task a:link,
 .task a:visited {
