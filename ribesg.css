@@ -52,13 +52,13 @@ a:hover {
 }
 
 /* Hide actual images */
-.task a[onclick~="doDelete"] img,
+.task a[onclick*="doDelete"] img,
 .task a[href$="configure"].task-icon-link img {
    display : none;
 }
 
 /* Job Delete icon */
-.task a[onclick~="doDelete"] {
+.task a[onclick*="doDelete"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
    background-size : contain;
 }
