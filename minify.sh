@@ -3,7 +3,7 @@
 
 for PATH in *.css *.js
 do
-  FILE=$(basename "$PATH")
+  FILE=$(/usr/bin/basename "$PATH")
   TYPE="${FILE##*.}"
   NAME="${FILE%.*}"
   yc --type $TYPE -o "$NAME.min.$TYPE" "$FILE"
