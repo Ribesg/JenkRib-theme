@@ -68,13 +68,9 @@ a:hover {
 .task a,
 .task a:link,
 .task a:visited {
-   display    : block;
+   display    : inline-block;
    height     : 24px;
    transition : color .1s, background-color .1s;
-}
-
-.task a:first-child {
-   float : left;
 }
 
 .task a:hover {
