@@ -1,10 +1,10 @@
-#!/bin/sh -xe
+#!/bin/bash -xe
 # Requires YUI Compressor as 'yc'
 
 for PATH in *.css *.js
 do
-  FILE=$(/usr/bin/basename "$PATH")
+  FILE=$(basename "$PATH")
   TYPE="${FILE##*.}"
   NAME="${FILE%.*}"
-  /usr/bin/yc --type $TYPE -o "$NAME.min.$TYPE" "$FILE"
+  yc --type $TYPE -o "$NAME.min.$TYPE" "$FILE"
 done
