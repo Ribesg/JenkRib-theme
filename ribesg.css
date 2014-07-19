@@ -49,129 +49,69 @@ a:hover {
  ** Task list **
  ***************/
 
-/* Set task list line height */
-.task {
-   height : 24px;
-}
-
-/* Make some place for the new icons */
-.task a:not(.task-link) {
-   padding-left   : 24px;
-   margin-left    : 8px;
-   vertical-align : middle !important;
-}
-
-/* Hide old icons */
-.task a[href="/"].task-icon-link img,
-.task a[href^="/job/"].task-icon-link img,
-.task a[href$="/changes"].task-icon-link img,
-.task a[href$="/ws"].task-icon-link img,
-.task a[href*="/build?"].task-icon-link img,
-.task a[onclick*="doDelete"]:not(.task-link) img,
-.task a[href$="configure"].task-icon-link img,
-.task a[href*="github.com"].task-icon-link img,
-.task a[href$="/depgraph-view"].task-icon-link img,
-.task a[href$="/jobConfigHistory"].task-icon-link img,
-.task a[href$="/badge"].task-icon-link img,
-.task a[href$="/nextbuildnumber"].task-icon-link img,
-.task a[href$="/GitHubPollLog"].task-icon-link img {
-   display : none;
-}
-
-/* Set link size */
-.task a[href="/"].task-icon-link,
-.task a[href^="/job/"].task-icon-link,
-.task a[href$="/changes"].task-icon-link,
-.task a[href$="/ws"].task-icon-link,
-.task a[href*="/build?"].task-icon-link,
-.task a[onclick*="doDelete"]:not(.task-link),
-.task a[href$="configure"].task-icon-link,
-.task a[href*="github.com"].task-icon-link,
-.task a[href$="/depgraph-view"].task-icon-link,
-.task a[href$="/jobConfigHistory"].task-icon-link,
-.task a[href$="/badge"].task-icon-link,
-.task a[href$="/nextbuildnumber"].task-icon-link,
-.task a[href$="/GitHubPollLog"].task-icon-link {
-   width  : 24px;
-   height : 24px;
-}
-
 /* Back icon */
-.task a[href="/"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/back.png) no-repeat;
-   background-size : contain;
+.task a[href="/"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/back.png);
 }
 
 /* Job State icon */
-.task a[href^="/job/"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/status.png) no-repeat;
-   background-size : contain;
+.task a[href^="/job/"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/status.png);
 }
 
 /* Job Changes icon */
-.task a[href$="/changes"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png) no-repeat;
-   background-size : contain;
+.task a[href$="/changes"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png);
 }
 
 /* Job Working Repository icon */
-.task a[href$="/ws"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png) no-repeat;
-   background-size : contain;
+.task a[href$="/ws"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png);
 }
 
 /* Job Build icon */
-.task a[href*="/build?"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build.png) no-repeat;
-   background-size : contain;
+.task a[href*="/build?"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build.png);
 }
 
 /* Job Delete icon */
-.task a[onclick*="doDelete"]:not(.task-link) {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png) no-repeat;
-   background-size : contain;
+.task a[onclick*="doDelete"]:not(.task-link) img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/delete.png);
 }
 
 /* Job Config icon */
-.task a[href$="configure"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png) no-repeat;
-   background-size : contain;
+.task a[href$="configure"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/configure.png);
 }
 
 /* Job Github icon */
-.task a[href*="github.com"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/github.png) no-repeat;
-   background-size : contain;
+.task a[href*="github.com"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/github.png);
 }
 
 /* Job Dependency Graph icon */
-.task a[href$="/depgraph-view"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/dependency.png) no-repeat;
-   background-size : contain;
+.task a[href$="/depgraph-view"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/dependency.png);
 }
 
 /* Job Configuration History icon */
-.task a[href$="/jobConfigHistory"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/config-history.png) no-repeat;
-   background-size : contain;
+.task a[href$="/jobConfigHistory"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/config-history.png);
 }
 
 /* Job Embeddable Build Status icon */
-.task a[href$="/badge"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build-status.png) no-repeat;
-   background-size : contain;
+.task a[href$="/badge"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/build-status.png);
 }
 
 /* Job Next Build Number icon */
-.task a[href$="/nextbuildnumber"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/number.png) no-repeat;
-   background-size : contain;
+.task a[href$="/nextbuildnumber"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/number.png);
 }
 
 /* Job Github Hook Log icon */
-.task a[href$="/GitHubPollLog"].task-icon-link {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/log.png) no-repeat;
-   background-size : contain;
+.task a[href$="/GitHubPollLog"].task-icon-link img {
+   content : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/log.png);
 }
 
 /************
