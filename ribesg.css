@@ -151,20 +151,28 @@ a:hover {
  ** Others **
  ************/
 img[src$="images/48x48/folder.png"],
-img[src$="images/48x48/package.png"] {
+img[src$="images/48x48/package.png"],
+img[src$="images/48x48/notepad.png"] {
    width          : 0;
    height         : 0;
    padding-right  : 48px;
    padding-bottom : 48px;
 }
 
+/* Main Workspace Repository icon */
 img[src$="images/48x48/folder.png"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png);
    background-size : contain;
 }
 
-/* Test */
+/* Main Artifacts icon */
 img[src$="images/48x48/package.png"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/package.png);
+   background-size : contain;
+}
+
+/* Main Changes icon */
+img[src$="images/48x48/notepad.png"] {
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png);
    background-size : contain;
 }
