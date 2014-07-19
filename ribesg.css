@@ -190,7 +190,7 @@ img[src$="images/24x24/gear.png"] {
 
 /* Main Workspace Repository icon */
 img[src$="images/48x48/folder.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/repo.png);
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/folder.png);
    background-size : contain;
 }
 
@@ -202,12 +202,12 @@ img[src$="images/48x48/package.png"] {
 
 /* Main Changes icon */
 img[src$="images/48x48/notepad.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png);
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
    background-size : contain;
 }
 
 /* Modify Description icon */
 img[src$="images/16x16/notepad.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/edit.png);
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
    background-size : contain;
 }
