@@ -70,7 +70,10 @@ img[src$="plugin/jobConfigHistory/img/confighistory.png"],
 img[src$="plugin/embeddable-build-status/images/24x24/shield.png"],
 img[src$="images/24x24/next.png"],
 img[src$="images/24x24/clipboard.png"],
-img[src$="images/24x24/user.png"] {
+img[src$="images/24x24/user.png"],
+img[src$="images/24x24/gear.png"],
+img[src$="images/24x24/fingerprint.png"],
+img[src$="images/24x24/credentials.png"] {
    width          : 0;
    height         : 0;
    padding-right  : 24px;
@@ -181,6 +184,18 @@ img[src$="images/24x24/user.png"] {
 /* Edit View icon */
 img[src$="images/24x24/gear.png"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/gear.png);
+   background-size : contain;
+}
+
+/* Fingerprint icon */
+img[src$="images/24x24/fingerprint.png"] {
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/fingerprint.png);
+   background-size : contain;
+}
+
+/* Credentials icon */
+img[src$="images/24x24/credentials.png"] {
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/credentials.png);
    background-size : contain;
 }
 
