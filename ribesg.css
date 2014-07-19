@@ -73,6 +73,11 @@ a:hover {
    transition : color .1s, background-color .1s;
 }
 
+.task a:not(:first-child) {
+   height : 100%;
+   width  : 100%;
+}
+
 .task a:hover {
    background-color : #151515;
 }
