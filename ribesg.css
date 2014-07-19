@@ -196,8 +196,7 @@ a:hover {
 }
 
 #main-panel > table > tbody > tr:first-child > td:first-child > a[href="ws/"] {
-   padding-left   : 48px;
-   vertical-align : middle !important;
+   display : block;
 }
 
 /* Main Job Working Repository icon */
