@@ -1,6 +1,8 @@
 #!/bin/bash -xe
 # Requires YUI Compressor as 'yc'
 
+env
+
 for PATH in *.css *.js
 do
   FILE=$(basename "$PATH")
