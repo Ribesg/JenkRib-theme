@@ -15,21 +15,13 @@ body, table, form, input, td, th, p, textarea, select {
    font-size        : 13px;
 
    /* Background */
-   background-color : #151515;
+   background-color : #000000;
    color            : #C8C8C8;
 }
 
-#side-panel {
-   background-color : #000000;
-}
-
-#main-panel {
-   background-color : #050505;
-}
-
 .top-sticker-inner {
-   background-color : #002000;
-   color            : whitesmoke;
+   background-color : #008000;
+   color            : #000000;
 }
 
 a,
@@ -40,15 +32,23 @@ a:visited,
 #breadcrumbs li a:visited {
    text-decoration : none;
    color           : green;
-   transition      : color .25s;
+   transition      : color .1s;
 }
 
 a:hover {
    color : #00FF00;
 }
 
+.task {
+   transition : background-color .1s;
+}
+
+.task:hover {
+   background-color : #151515;
+}
+
 #main-table + table {
-   display: none;
+   display : none;
 }
 
 /************
