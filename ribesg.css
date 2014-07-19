@@ -152,7 +152,8 @@ a:hover {
  ************/
 img[src$="images/48x48/folder.png"],
 img[src$="images/48x48/package.png"],
-img[src$="images/48x48/notepad.png"] {
+img[src$="images/48x48/notepad.png"],
+img[src$="images/16x16/notepad.png"] {
    width          : 0;
    height         : 0;
    padding-right  : 48px;
@@ -174,5 +175,11 @@ img[src$="images/48x48/package.png"] {
 /* Main Changes icon */
 img[src$="images/48x48/notepad.png"] {
    background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/changes.png);
+   background-size : contain;
+}
+
+/* Modify Description icon */
+img[src$="images/16x16/notepad.png"] {
+   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/edit.png);
    background-size : contain;
 }
