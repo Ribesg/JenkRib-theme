@@ -68,8 +68,9 @@ a:hover {
 .task a,
 .task a:link,
 .task a:visited {
-   display    : block;
-   transition : color .1s, background-color .1s;
+   display     : block;
+   line-height : 24px;
+   transition  : color .1s, background-color .1s;
 }
 
 .task a:first-child {
