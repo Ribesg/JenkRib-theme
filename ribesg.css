@@ -69,7 +69,11 @@ a:hover {
    color : #000000 !important;
 }
 
-#breadcrumb-menu-target {
+#breadcrumb-menu-target,
+#breadcrumb-menu-target div,
+#breadcrumb-menu-target ul,
+#breadcrumb-menu-target li,
+#breadcrumb-menu-target a {
    background-color : #202020 !important;
    color            : #00C000 !important;
 }
