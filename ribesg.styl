@@ -11,6 +11,7 @@
 $background1 = #000000
 $background2 = #151515
 $background3 = #202020
+$background4 = #303030
 
 /***********************
  ** General overrides **
@@ -92,10 +93,13 @@ table.pane > tbody > tr > td:last-child
   color #00C000
   border-color #008000
 
+#jenkins .yui-button.primary button:hover
+#jenkins .yui-button.primary .hover
+  background-color $background4
+  
 /***********
  ** Links **
  ***********/
-
 a
 #breadcrumbs li a
   &:link
