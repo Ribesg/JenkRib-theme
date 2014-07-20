@@ -71,8 +71,9 @@ a:hover {
 
 /* Task list */
 .task {
-   height        : 35px;
-   transition    : background-color .25s;
+   height      : 35px;
+   line-height : 35px;
+   transition  : background-color .25s;
 }
 
 .task:hover {
