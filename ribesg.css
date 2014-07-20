@@ -113,40 +113,40 @@ a:hover {
 
 /* Set old image size to 0 and set padding to new image size */
 
-img[src$="images/48x48/folder.png"],
-img[src$="images/48x48/package.png"],
-img[src$="images/48x48/notepad.png"] {
+img[width="48"][src$="images/48x48/folder.png"],
+img[width="48"][src$="images/48x48/package.png"],
+img[width="48"][src$="images/48x48/notepad.png"] {
    width          : 0;
    height         : 0;
    padding-right  : 48px;
    padding-bottom : 48px;
 }
 
-img[src$="images/24x24/new-package.png"],
-img[src$="images/24x24/up.png"],
-img[src$="images/24x24/search.png"],
-img[src$="images/24x24/notepad.png"],
-img[src$="images/24x24/folder.png"],
-img[src$="images/24x24/clock.png"],
-img[src$="images/24x24/edit-delete.png"],
-img[src$="images/24x24/setting.png"],
-img[src$="plugin/github/logov3.png"],
-img[src$="images/24x24/graph.gif"],
-img[src$="plugin/jobConfigHistory/img/confighistory.png"],
-img[src$="plugin/embeddable-build-status/images/24x24/shield.png"],
-img[src$="images/24x24/next.png"],
-img[src$="images/24x24/clipboard.png"],
-img[src$="images/24x24/user.png"],
-img[src$="images/24x24/gear.png"],
-img[src$="images/24x24/fingerprint.png"],
-img[src$="plugin/credentials/images/48x48/credentials.png"] {
+img[width="24"][src$="images/24x24/new-package.png"],
+img[width="24"][src$="images/24x24/up.png"],
+img[width="24"][src$="images/24x24/search.png"],
+img[width="24"][src$="images/24x24/notepad.png"],
+img[width="24"][src$="images/24x24/folder.png"],
+img[width="24"][src$="images/24x24/clock.png"],
+img[width="24"][src$="images/24x24/edit-delete.png"],
+img[width="24"][src$="images/24x24/setting.png"],
+img[width="24"][src$="plugin/github/logov3.png"],
+img[width="24"][src$="images/24x24/graph.gif"],
+img[width="24"][src$="plugin/jobConfigHistory/img/confighistory.png"],
+img[width="24"][src$="plugin/embeddable-build-status/images/24x24/shield.png"],
+img[width="24"][src$="images/24x24/next.png"],
+img[width="24"][src$="images/24x24/clipboard.png"],
+img[width="24"][src$="images/24x24/user.png"],
+img[width="24"][src$="images/24x24/gear.png"],
+img[width="24"][src$="images/24x24/fingerprint.png"],
+img[width="24"][src$="plugin/credentials/images/48x48/credentials.png"] {
    width          : 0;
    height         : 0;
    padding-right  : 24px;
    padding-bottom : 24px;
 }
 
-img[src$="images/16x16/notepad.png"] {
+img[width="16"][src$="images/16x16/notepad.png"] {
    width          : 0;
    height         : 0;
    padding-right  : 16px;
