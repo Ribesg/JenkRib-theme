@@ -69,6 +69,11 @@ a:hover {
    color : #000000 !important;
 }
 
+#breadcrumb-menu-target {
+   background-color : #202020 !important;
+   color            : #00C000 !important;
+}
+
 /* Task list */
 .task {
    height      : 35px;
