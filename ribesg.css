@@ -78,7 +78,7 @@ a:hover {
 }
 
 #breadcrumbs LI.children, #breadcrumbs LI.separator {
-   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/menu_right_arrow2.png);
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/menu_right_arrow2.png) !important;
 }
 
 /* Task list */
