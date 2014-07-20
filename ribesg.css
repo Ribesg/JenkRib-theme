@@ -62,11 +62,11 @@ a:hover {
 #breadcrumbs li a,
 #breadcrumbs li a:link,
 #breadcrumbs li a:visited {
-   color : #151515;
+   color : #151515 !important;
 }
 
 #breadcrumbs li a:hover {
-   color : #000000;
+   color : #000000 !important;
 }
 
 /* Task list */
