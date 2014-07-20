@@ -1,5 +1,10 @@
 #!/bin/bash -xe
-# Requires YUI Compressor as 'yc'
+# Requires Stylus and YUI Compressor as 'yc'
+
+for FILEPATH in *.styl
+do
+  stylus $(basename "$FILEPATH")
+done
 
 for FILEPATH in *.css *.js
 do
