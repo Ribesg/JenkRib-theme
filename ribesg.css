@@ -71,9 +71,9 @@ a:hover {
 
 /* Task list */
 .task {
-   height         : 24px;
-   padding-bottom : 15px;
-   transition     : background-color .25s;
+   height        : 24px;
+   margin-bottom : 5px;
+   transition    : background-color .25s;
 }
 
 .task:hover {
