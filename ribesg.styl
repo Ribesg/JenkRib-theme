@@ -8,9 +8,9 @@
 /***************
  ** Variables **
  ***************/
-background1 = #000000
-background2 = #151515
-background3 = #202020
+$background1 = #000000
+$background2 = #151515
+$background3 = #202020
 
 /***********************
  ** General overrides **
@@ -25,17 +25,20 @@ body, table, form, input, td, th, p, textarea, select
   font-size 14px
 
   /* Background */
-  background-color background1
+  background-color $background1
   color #C8C8C8
 
 .top-sticker-inner
-  background-color background2
+  background-color $background2
 
 #main-table + table
   display none
 
 div[style="float:right; background-color:white; z-index: 1; position:relative; margin-left: 1em"]
-  background-color background1 !important
+  background-color $background1 !important
+
+td.pane-header
+  background-color $background3
 
 /***********
  ** Links **
@@ -73,7 +76,7 @@ a
     background-image url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/menu_right_arrow2.png) !important
 
 #breadcrumb-menu-target *
-  background-color background3 !important
+  background-color $background3 !important
   color #00C000 !important
 
 /* Task list */
@@ -84,7 +87,7 @@ a
   transition background-color .25s
 
   &:hover
-    background-color background3
+    background-color $background3
 
   a
     &:link
