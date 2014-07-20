@@ -24,8 +24,7 @@ body, table, form, input, td, th, p, textarea, select {
 }
 
 .top-sticker-inner {
-   background-color : #008000;
-   color            : #000000 !important;
+   background-color : #151515;
 }
 
 #main-table + table {
@@ -62,11 +61,11 @@ a:hover {
 #breadcrumbs li a,
 #breadcrumbs li a:link,
 #breadcrumbs li a:visited {
-   color : #151515 !important;
+   color : #00FF00 !important;
 }
 
 #breadcrumbs li a:hover {
-   color : #000000 !important;
+   color : #FFFFFF !important;
 }
 
 #breadcrumb-menu-target,
@@ -76,6 +75,10 @@ a:hover {
 #breadcrumb-menu-target a {
    background-color : #202020 !important;
    color            : #00C000 !important;
+}
+
+#breadcrumbs LI.children, #breadcrumbs LI.separator {
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/menu_right_arrow2.png);
 }
 
 /* Task list */
@@ -116,10 +119,12 @@ a:hover {
 img[width="48"][src$="images/48x48/folder.png"],
 img[width="48"][src$="images/48x48/package.png"],
 img[width="48"][src$="images/48x48/notepad.png"] {
-   width          : 0;
-   height         : 0;
-   padding-right  : 48px;
-   padding-bottom : 48px;
+   width           : 0;
+   height          : 0;
+   padding-right   : 48px;
+   padding-bottom  : 48px;
+   background      : no-repeat center center;
+   background-size : contain;
 }
 
 img[width="24"][src$="images/24x24/new-package.png"],
@@ -140,17 +145,21 @@ img[width="24"][src$="images/24x24/user.png"],
 img[width="24"][src$="images/24x24/gear.png"],
 img[width="24"][src$="images/24x24/fingerprint.png"],
 img[width="24"][src$="plugin/credentials/images/48x48/credentials.png"] {
-   width          : 0;
-   height         : 0;
-   padding-right  : 24px;
-   padding-bottom : 24px;
+   width           : 0;
+   height          : 0;
+   padding-right   : 24px;
+   padding-bottom  : 24px;
+   background      : no-repeat center center;
+   background-size : contain;
 }
 
 img[width="16"][src$="images/16x16/notepad.png"] {
-   width          : 0;
-   height         : 0;
-   padding-right  : 16px;
-   padding-bottom : 16px;
+   width           : 0;
+   height          : 0;
+   padding-right   : 16px;
+   padding-bottom  : 16px;
+   background      : no-repeat center center;
+   background-size : contain;
 }
 
 /***************
@@ -159,110 +168,92 @@ img[width="16"][src$="images/16x16/notepad.png"] {
 
 /* New Item icon */
 img[width="24"][src$="images/24x24/new-package.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/new-package.png) no-repeat;
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/new-package.png);
 }
 
 /* Back icon */
 img[width="24"][src$="images/24x24/up.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/up.png) no-repeat;
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/up.png);
 }
 
 /* Job State icon */
 img[width="24"][src$="images/24x24/search.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/search.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/search.png);
 }
 
 /* Job Changes icon */
 img[width="24"][src$="images/24x24/notepad.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
 }
 
 /* Job Working Repository icon */
 img[width="24"][src$="images/24x24/folder.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/folder.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/folder.png);
 }
 
 /* Job Build icon */
 img[width="24"][src$="images/24x24/clock.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/clock.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/clock.png);
 }
 
 /* Job Delete icon */
 img[width="24"][src$="images/24x24/edit-delete.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/edit-delete.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/edit-delete.png);
 }
 
 /* Job Config icon */
 img[width="24"][src$="images/24x24/setting.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/setting.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/setting.png);
 }
 
 /* Job Github icon */
 img[width="24"][src$="plugin/github/logov3.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/github.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/github.png);
 }
 
 /* Job Dependency Graph icon */
 img[width="24"][src$="images/24x24/graph.gif"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/graph.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/graph.png);
 }
 
 /* Job Configuration History icon */
 img[width="24"][src$="plugin/jobConfigHistory/img/confighistory.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/confighistory.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/confighistory.png);
 }
 
 /* Job Embeddable Build Status icon */
 img[width="24"][src$="plugin/embeddable-build-status/images/24x24/shield.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/shield.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/shield.png);
 }
 
 /* Job Next Build Number icon */
 img[width="24"][src$="images/24x24/next.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/next.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/next.png);
 }
 
 /* Job Github Hook Log icon */
 img[width="24"][src$="images/24x24/clipboard.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/clipboard.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/clipboard.png);
 }
 
 /* Users icon */
 img[width="24"][src$="images/24x24/user.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/user.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/user.png);
 }
 
 /* Edit View icon */
 img[width="24"][src$="images/24x24/gear.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/gear.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/gear.png);
 }
 
 /* Fingerprint icon */
 img[width="24"][src$="images/24x24/fingerprint.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/fingerprint.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/fingerprint.png);
 }
 
 /* Credentials icon */
 img[width="24"][src$="plugin/credentials/images/48x48/credentials.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/credentials.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/credentials.png);
 }
 
 /************
@@ -271,24 +262,20 @@ img[width="24"][src$="plugin/credentials/images/48x48/credentials.png"] {
 
 /* Main Workspace Repository icon */
 img[width="48"][src$="images/48x48/folder.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/folder.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/folder.png);
 }
 
 /* Main Artifacts icon */
 img[width="48"][src$="images/48x48/package.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/package.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/package.png);
 }
 
 /* Main Changes icon */
 img[width="48"][src$="images/48x48/notepad.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
 }
 
 /* Modify Description icon */
 img[width="16"][src$="images/16x16/notepad.png"] {
-   background      : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
-   background-size : contain;
+   background-image : url(/job/JenkRib-theme/lastSuccessfulBuild/artifact/images/notepad.png);
 }
