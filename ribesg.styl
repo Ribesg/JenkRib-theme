@@ -13,6 +13,13 @@ $background2 = #151515
 $background3 = #202020
 $background4 = #303030
 
+$green1 = #004000
+$green2 = #006000
+$green3 = #008000
+$green4 = #00A000
+$green5 = #00C000
+$green6 = #00FF00
+
 /***********************
  ** General overrides **
  ***********************/
@@ -55,7 +62,7 @@ table.sortable span.sortarrow
 #viewList td.inactive a
 #viewList td.active a
 .yui-skin-sam .yuimenuitemlabel
-  color #00C000
+  color $green5
 
 .bigtable tr
 #viewList td.active
@@ -64,20 +71,20 @@ table.pane
 th.pane
 td.pane
 .yui-skin-sam .yuimenu ul
-  border solid 1px #008000
+  border solid 1px $green3
 
 table.pane > tbody > tr > td:last-child
-  border-right solid 1px #008000
+  border-right solid 1px $green3
 
 #viewList td.filler
-  border-bottom solid 1px #008000
+  border-bottom solid 1px $green3
 
 .ygtvlabel
 .ygtvlabel:link
 .ygtvlabel:visited
 .ygtvlabel:hover
   background-color $background2 !important
-  color #00C000
+  color $green5
 
 #jenkins .yuimenu .bd
   box-shadow none
@@ -90,13 +97,13 @@ table.pane > tbody > tr > td:last-child
 
 #jenkins .yui-button.primary button
   background-color $background3
-  color #00C000
-  border-color #008000
+  color $green5
+  border-color $green3
 
 #jenkins .yui-button.primary button:hover
 #jenkins .yui-button.primary .hover
   background-color $background4
-  border-color #008000
+  border-color $green3
 
 /***********
  ** Links **
@@ -112,21 +119,21 @@ a
 a
   &:link
   &:visited
-    color #00A000
+    color $green4
     transition color .25s
 
   &:hover
-    color #00FF00
+    color $green6
 
 /* Breadcrumb */
 #breadcrumbs li
   a
     &:link
     &:visited
-      color #00FF00 !important
+      color $green5 !important
 
     &:hover
-      color #FFFFFF !important
+      color white !important
 
   .children
   .separator
@@ -134,7 +141,7 @@ a
 
 #breadcrumb-menu-target *
   background-color $background3 !important
-  color #00C000 !important
+  color $green4 !important
 
 /* Task list */
 .task
