@@ -16,7 +16,7 @@
 body, table, form, input, td, th, p, textarea, select {
    /* Apply global font */
    font-family      : 'Open Sans', sans-serif;
-   font-size        : 13px;
+   font-size        : 14px;
 
    /* Background */
    background-color : #000000;
@@ -73,6 +73,7 @@ a:hover {
 .task {
    height      : 35px;
    line-height : 35px;
+   font-size   : 16px;
    transition  : background-color .25s;
 }
 
