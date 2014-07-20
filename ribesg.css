@@ -9,6 +9,10 @@
  ** General overrides **
  ***********************/
 
+* {
+   box-sizing : border-box;
+}
+
 body, table, form, input, td, th, p, textarea, select {
    /* Apply global font */
    font-family      : 'Open Sans', sans-serif;
@@ -46,7 +50,8 @@ a:visited,
 a,
 a:link,
 a:visited {
-   color : #00A000;
+   color      : #00A000;
+   transition : color .25s;
 }
 
 a:hover {
@@ -68,25 +73,27 @@ a:hover {
 .task {
    height         : 24px;
    padding-bottom : 5px;
+   transition     : background-color .25s;
+}
+
+.task:hover {
+   background-color : #202020;
 }
 
 .task a,
 .task a:link,
 .task a:visited {
-   display    : inline-block;
-   height     : 24px;
-   transition : color .1s, background-color .1s;
+   display : inline-block;
+   height  : 24px;
 }
 
 .task a:not(:first-child) {
-   position    : relative;
-   height      : 100%;
-   width       : 100%;
-   line-height : 24px;
-}
-
-.task a:hover {
-   background-color : #151515;
+   position     : relative;
+   height       : 100%;
+   width        : 100%;
+   line-height  : 24px;
+   margin-left  : -28px;
+   padding-left : 30px;
 }
 
 /************
