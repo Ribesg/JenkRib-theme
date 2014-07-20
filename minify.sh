@@ -6,6 +6,7 @@ do
   FILE1=$(basename "$FILEPATH1")
   TYPE1="${FILE1##*.}"
   NAME1="${FILE1%.*}"
+  stylus "$FILE1" -p > "$NAME1.css"
   stylus "$FILE1" -c -p > "$NAME1.min.css"
 done
 
